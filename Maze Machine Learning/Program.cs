@@ -1368,7 +1368,6 @@ namespace Maze_Machine_Learning
 
     static class Program
     {
-        //public static Maze maze;
         public static Eye_Tester mouse_tracker;
         public static GeneticAlg genalg;
         public static Settings settings;
