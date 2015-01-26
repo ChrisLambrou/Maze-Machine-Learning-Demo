@@ -28,7 +28,7 @@ namespace Maze_Machine_Learning
     /// Integer coordinate system.
     /// </summary>
     /// <remarks>
-    /// Contains variouse operator overloads for CoordI, CoordD, int, and double types.
+    /// Contains various operator overloads for CoordI, CoordD, int, and double types.
     /// In cases where doubles are assigned or compared to integers, doubles are truncated.
     /// In cases where integers and doubles are combined via operations, integers are promoted.
     /// </remarks>
@@ -189,7 +189,7 @@ namespace Maze_Machine_Learning
     /// Double precision coordinate system.
     /// </summary>
     /// <remarks>
-    /// Contains variouse operator overloads for CoordI, CoordD, int, and double types.
+    /// Contains various operator overloads for CoordI, CoordD, int, and double types.
     /// Many of the operators relating CoordD to CoordI are in the CoordI struct.
     /// In cases where integers and doubles are combined via operations, integers are promoted.
     /// </remarks>
@@ -370,7 +370,7 @@ namespace Maze_Machine_Learning
         }
 
         /// <summary>
-        /// Obtains the one dimentional index from a CoordI for a cell and direction for a wall.
+        /// Obtains the one dimensional index from a CoordI for a cell and direction for a wall.
         /// </summary>
         /// <param name="c">The coordinates of the cell.</param>
         /// <param name="dir">The direction of the wall.</param>
@@ -385,7 +385,7 @@ namespace Maze_Machine_Learning
         }
 
         /// <summary>
-        /// Obtains the one dimentional index from coordinates for a cell and direction for a wall.
+        /// Obtains the one dimensional index from coordinates for a cell and direction for a wall.
         /// </summary>
         /// <param name="x">The x coordinate of the cell.</param>
         /// <param name="y">The y coordinate of the cell.</param>
@@ -453,7 +453,7 @@ namespace Maze_Machine_Learning
         }
 
         /// <summary>
-        /// Recurrsive maze generation based on the "Growing tree" algorithm.
+        /// Recursive maze generation based on the "Growing tree" algorithm.
         /// Should be invoked with the goal coordinates of the maze, and no value for f.
         /// </summary>
         /// <param name="c">Coordinates generate from.</param>
@@ -548,7 +548,7 @@ namespace Maze_Machine_Learning
         }
 
         /// <summary>
-        /// Ensures that a given angle is betwean 0 (inclusive) and τ (exclusive).
+        /// Ensures that a given angle is between 0 (inclusive) and τ (exclusive).
         /// </summary>
         /// <param name="θ">Angle.</param>
         /// <returns>The correct angle.</returns>
@@ -620,7 +620,7 @@ namespace Maze_Machine_Learning
         }
 
         /// <summary>
-        /// Draws with the a default color.
+        /// Draws with the a default colour.
         /// </summary>
         /// <param name="e">Event data.</param>
         public void draw(PaintEventArgs e)
@@ -867,7 +867,7 @@ namespace Maze_Machine_Learning
     /// <summary>
     /// A feed forward neural network based AI.
     /// </summary>
-    /// <field name="weights">An array of synapse weights betwean neurons.</field>
+    /// <field name="weights">An array of synapse weights between neurons.</field>
     /// <field name="layers">The working layers used to calculate the output.</field>
     /// <field name="inputs_outputs">The inputs and outputs of the network.</field>
     /// <field name="net_size">The size of each layer.</field>
@@ -1039,6 +1039,7 @@ namespace Maze_Machine_Learning
         {
             this.m = m;
             num_eyes = Program.settings.bot_eyes;
+            energy_step = 1.0;
 
             int neurons = num_eyes +
                 (Program.settings.think_distance ? 1 : 0) +
@@ -1059,7 +1060,7 @@ namespace Maze_Machine_Learning
         }
 
         /// <summary>
-        /// Initalise in a given position.
+        /// Initialise in a given position.
         /// </summary>
         /// <param name="pos">The position to move to.</param>
         public void init(CoordD pos)
@@ -1238,7 +1239,7 @@ namespace Maze_Machine_Learning
 
     /// <summary>
     /// A controller for a <c>Maze</c> and a population of <c>Bot</c>s that attempt to path find.
-    /// This "Genetic Algorithm" uses concepts of artifial selection and evolution to train the AIs.
+    /// This "Genetic Algorithm" uses concepts of artificial selection and evolution to train the AIs.
     /// </summary>
     class GeneticAlg
     {
