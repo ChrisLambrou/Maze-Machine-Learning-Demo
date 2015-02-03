@@ -28,18 +28,6 @@ I intend to revisit this project and write unit tests as well as new features.
   * The "Path Distance To Goal" option will allow the networks to see the fastest path to the goal.
   * The "Direct Distance To Goal" option will provide the networks a value that indicates how far from the goal they are.
   * Finally, "Aware of Velocity" tells the network its current speed and angle.
-  
-## Quirks:
-  * The bots can not see the goal, start, or each other, only walls.
 
-## Known Issues:
-  * Bots can see through corners.
-  * If radius is low and speed is high, bots can pass through walls.
-  * Walls act as if they are rough instead of smooth when pressed against.
-  
-## Planned Features:
-  * Save / Load
-  * Better Collision Detection
-  * Better Raycasting
-  * Unit Tests
-  * Bot to Bot Communication & Population vs Population Evolution
+## Planning
+Refer to [Review & Roadmap](Review & Roadmap.md).
